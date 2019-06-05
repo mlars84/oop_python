@@ -90,3 +90,23 @@ class GermanShepard(Dog):
 daisy = AmericanBulldog('Daisy Mae', 10)
 # print(daisy.name) # Daisy Mae
 print(daisy.sleep_amount(13))
+
+# print(isinstance(daisy, AmericanBulldog)) # True
+
+
+# Overriding the Functionality of a Parent Class
+class Bird:
+    species = 'avian'
+
+class Pheasant(Bird):
+    pass
+
+class Pigeon(Bird):
+    species = 'reptile'
+
+phoebe = Pheasant()
+# print(phoebe.species) # avian
+frank = Pigeon()
+# print(frank.species) # reptile
+
+
